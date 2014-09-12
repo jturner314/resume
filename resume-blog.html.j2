@@ -29,9 +29,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   <div class="resume-entry-subhead">
     {% if entry.title is defined %}
     <span class="resume-entry-title-grade">
+      {% if entry.grade is defined %}
+      {{ entry.title }}, {{ entry.grade }}
+      {% else %}
       {{ entry.title }}
-      {%- if entry.grade is defined -%}
-      , {{ entry.grade }}
       {% endif %}
     </span>
     {% endif %}
