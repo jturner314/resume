@@ -1,0 +1,110 @@
+{#
+Copyright (C) 2014  Jim Turner
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#}
+
+{%- macro entrylist(entries) -%}
+  {% for entry in entries %}
+<div class="resume-entry">
+  <h3 class="resume-entry-head">
+    {% if entry.name is defined %}
+    <span class="resume-entry-name">{{ entry.name }}</span>
+    {% endif %}
+    {% if entry.date is defined %}
+    <span class="resume-entry-date">{{ entry.date }}</span>
+    {% endif %}
+  </h3>
+  <div class="resume-entry-subhead">
+    {% if entry.title is defined %}
+    <span class="resume-entry-title-grade">
+      {{ entry.title }}
+      {%- if entry.grade is defined -%}
+      , {{ entry.grade }}
+      {% endif %}
+    </span>
+    {% endif %}
+    {% if entry.location is defined %}
+    <span class="resume-entry-location">{{ entry.location }}</span>
+    {% endif %}
+  </div>
+  <div class="resume-entry-description">
+    {% if entry.description is defined %}
+      {% if entry.description is string %}
+    <p>{{ entry.description }}</p>
+      {% else %}
+    <ul class="resume-list">
+        {% for item in entry.description %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+  </div>
+      {% endif %}
+    {% endif %}
+</div>
+  {% endfor %}
+{%- endmacro -%}
+
+---
+layout: page
+title: Resume
+in_header: yes
+permalink: /resume/
+---
+
+<div class="resume">
+  <h2 id="summary">Summary</h2>
+  <p class="resume-summary">
+    {{ summary }}
+  </p>
+
+  <h2 id="education">Education</h2>
+  {{ entrylist(education)|indent(6) }}
+
+  <h2 id="publications">Publications &amp; Presentations</h2>
+  {% for item in publications %}
+  <p class="resume-publication">
+    {% if item.url is defined %}
+    <a href="{{ item.url }}">{{ item.text }}</a>
+    {% else %}
+    {{ item.text }}
+    {% endif %}
+  </p>
+  {% endfor %}
+
+  <h2 id="experience">Work &amp; Research Experience</h2>
+  {{ entrylist(experience)|indent(6) }}
+
+  <h2 id="skills">Skills</h2>
+  <ul class="resume-skills">
+  {% for skill in skills %}
+    <li>
+      <em>{{ skill.name }}</em>
+      {%- if skill.description is defined -%}
+      : {{ skill.description }}
+      {%- endif -%}
+    </li>
+    {% if not loop.last %}
+    <!-- This is a hack to get bullets evenly spaced between the skills. If you have a better solution, please let me know. -->
+    <li class="bullet">
+      &#8226;
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+
+  <h2 id="extracurricular">Leadership, Involvement, &amp; Service</h2>
+  {{ entrylist(extracurricular)|indent(6) }}
+  </div>
+</div>

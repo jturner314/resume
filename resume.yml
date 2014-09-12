@@ -1,0 +1,132 @@
+# This work is licensed under a Creative Commons Attribution-NoDerivatives 4.0
+# International License <https://creativecommons.org/licenses/by-nd/4.0/>.
+
+contact:
+  name:
+    first: James D.
+    last: Turner
+  email: jturner314@gmail.com
+  linkedin: jturner314
+summary:
+  Mechanical engineering undergraduate student with research and industry
+  experience in mechanical simulation, electromechanical controls, product
+  development, testing and verification, data analysis, and software
+  development. Seeking summer research internship.
+education:
+  - name: North Carolina State University
+    title: B.S.~Mechanical Engineering, Spanish & Computer Science minors
+    grade: 4.00~GPA
+    date: 2011--2015
+    location: Raleigh, NC
+    description:
+      - "//2014 Goldwater Scholar//: Merit-based, national scholarship"
+      - "//2011 NCSU Park Scholar//: Merit-based, full-ride scholarship"
+  - name: Middle Creek High School
+    title: Valedictorian
+    grade: 4.00~GPA, Perfect SAT score (2400)
+    date: 2007--2011
+    location: Apex, NC
+    description:
+      - "//2011 National Honor Society's National Scholar//:
+        Merit-based, national scholarship (1 selected annually)"
+      - "//2011 U.S. Presidential Scholar//:
+        National recognition by the U.S. President and Secretary of Education"
+publications:
+  - key: Mack2014
+    url: http://dx.doi.org/10.1016/j.neuro.2013.11.008
+    text:
+      "Mack, C. M., B. J. Lin, J. D. Turner, A. F. Johnstone, L. D. Burgoon,
+      and T. J. Shafer. ``Burst and principal components analyses of MEA data
+      for 16 chemicals describe at least three effects classes''.
+      //NeuroToxicology// 40 (Jan. 2014), pp. 75--85."
+  - key: Turner2014
+    text:
+      "Turner, J. D. and Y. Zhu. ``Three-dimensional structures from
+      electrically-activated self-folding of polymer sheets''. //Summer
+      Undergraduate Research Symposium//. North Carolina State University.
+      Raleigh, NC, July 2014."
+  - key: Qin2013
+    text:
+      "Qin, Q., R. W. Mailen, J. D. Turner, Y. Liu, J. Genzer, M. D. Dickey,
+      and Y. Zhu. ``Self-Folding of Polymer Sheets into Origami: Modeling and
+      Experiments''. //SEM Annual Conference and Exposition on Experimental and
+      Applied Mechanics//. Lombard, IL, June 2013."
+experience:
+  - name: North Carolina State University, Dept. of Mechanical & Aerospace Engineering
+    title: Undergraduate Researcher
+    date: Sept.~2011--present
+    description:
+      - Developed automatically foldable structures out of prestrained polymer
+        sheets using nanowire film to generate localized heating.
+      - Designed and fabricated equipment and samples, developed procedures,
+        tested samples, analyzed results, devised improvements.
+  - name: Deere & Company
+    title: Product Research & Development Engineering Intern
+    date: May--Aug.~2013
+    location: Waterloo, IA
+    description:
+      - Developed and tested the control software for the power takeoff (PTO) on
+        5M/5R series tractors. Started with no functioning PTO; by the end of
+        the summer, had fully functional PTO with new mode of operation and
+        superior performance than previous model tractors.
+  - name: Applied Research Associates
+    title: Engineering Intern
+    date: May--Aug.~2012
+    location: Raleigh, NC
+    description:
+      - Performed validation testing, analysis, and debugging for accreditation
+        of state-of-the-art munitions effects simulation software.
+      - Developed custom computer programs in Python for file manipulation,
+        statistics, and analysis of engineering data.
+      - Received the //Above and Beyond the Call of Duty Award//.
+  - name: U.S.~Environmental Protection Agency
+    title: Research Intern
+    date: Summer 2010 & Summer 2011
+    location: Durham, NC
+    description:
+      - "Developed multiple custom computer programs and scripts to analyze
+        experimental data; wrote user guides and source code documentation;
+        modified existing software to work with EPA's data; conducted software
+        training for staff."
+  - name: U.S.~EPA/Shaw University Research Apprenticeship/Internship Program
+    title: Research Apprentice
+    date: June~2007~--~May~2011
+    location: Raleigh, NC
+    description:
+      - Highly selective (less than 2% of applicants selected), 4-year,
+        year-round commitment.
+skills:
+  - name: Spanish
+  - name: Programming
+    description: Python, Java, VBA, C, C++, Bash, Git
+  - name: Linux
+  - name: LaTeX
+  - name: Origami
+  - name: Statistics & Data Analysis
+extracurricular:
+  - name: Presidential Volunteer Service Awards
+    description: Six Gold Medals for performing more than 1,700 hours of community service.
+  - name: "N.C. State Engineers' Council"
+    title: Department Representative, Secretary, Committee Chair
+    date: 2011--present
+    description:
+      - Organized and ran two Engineering Career Fair preparation events for 280
+        total NCSU students (with panels, mock interviews, and group sessions with
+        NCSU alumni) in collaboration with the NCSU Engineering Foundation and
+        NCSU Career Development Center.
+  - name: N.C. State Honor Societies
+    date: 2011--present
+    description: Tau Beta Pi, Phi Beta Kappa, Phi Kappa Phi, University Honors Program
+  - name: N.C. State Organizations
+    date: 2011--present
+    description: ASME, Leadership in Action, Open Hardware Makerspace, Engineers Without Borders
+  - name: N.C. State Alternative Service Break
+    title: Team Leader
+    date: 2012--2013
+    location: Guyan Valley, West Virginia
+    description:
+      - Planned logistics and programming for weeklong service trip.  Led the
+        team and solved unexpected problems.
+  - name: General H. Hugh Shelton Leadership Center
+    title: Coach/Mentor/Trainer, Organizing Subcommittee Chairman, Peer Leader
+    date: 2008--2013

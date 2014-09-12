@@ -1,0 +1,117 @@
+{#
+Copyright (C) 2014  Jim Turner
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#}
+
+{%- macro entrylist(entries) -%}
+  {% for entry in entries %}
+    {% if entry.name is defined and entry.date is defined %}
+{{ entry.name|left_right(entry.date,100) }}
+    {% elif entry.name is defined %}
+{{ entry.name }}
+    {% elif entry.date is defined %}
+{{ ""|left_right(entry.date,100) }}
+    {% endif %}
+    {% if entry.title is defined and entry.grade is defined and entry.location is defined %}
+{{ (entry.title + ", " + entry.grade)|left_right(entry.location,100) }}
+    {% elif entry.title is defined and entry.location is defined %}
+{{ entry.title|left_right(entry.location,100) }}
+    {% elif entry.title is defined %}
+{{ entry.title }}
+    {% elif entry.location is defined %}
+{{ ""|left_right(entry.location,100) }}
+    {% elif entry.title is not defined and entry.grade is not defined and entry.location is not defined %}
+    {% else %}
+    {# throw error on undefined #}
+    {{ entry.title }}{{ entry.grade }}{{ entry.location }}
+    {% endif %}
+    {% if entry.description is defined %}
+      {% if entry.description is string %}
+
+{{ entry.description|hard_wrap(100,4) }}
+      {% else %}
+
+        {% for item in entry.description %}
+{{ item|hard_wrap(100,4,"*") }}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+    {% if not loop.last %}
+
+    {% endif %}
+  {% endfor %}
+{%- endmacro -%}
+
+{{ "#" * (contact.name.first + " " + contact.name.last)|length }}
+{{ contact.name.first }} {{ contact.name.last }}
+{{ "#" * (contact.name.first + " " + contact.name.last)|length }}
+
+{% if contact.address is defined %}
+Address: {{ contact.address.street }} – {{ contact.address.city }}
+{% if contact.address.country is defined %}
+{{ contact.address.country }}
+{% endif %}
+{% endif %}
+{% if contact.phone is defined %}
+Phone:   {{ contact.phone }}
+{% endif %}
+{% if contact.email is defined %}
+Email:   {{ contact.email }}
+{% endif %}
+{% if contact.linkedin is defined %}
+Social:  linkedin.com/in/{{ contact.linkedin }}
+{% endif %}
+
+
+Summary
+=======
+
+{{ summary|hard_wrap(100) }}
+
+
+Education
+=========
+
+{{ entrylist(education) }}
+
+Publications & Presentations
+============================
+
+{% for item in publications %}
+{{ item.text|hard_wrap(100,0,"",2) }}
+
+{% endfor %}
+
+Work & Research Experience
+==========================
+
+{{ entrylist(experience) }}
+
+Skills
+======
+
+{% for skill in skills %}
+  {% if skill.description is defined %}
+{{ (skill.name + ": " + skill.description)|hard_wrap(100,2,"*") }}
+  {% else %}
+{{ skill.name|hard_wrap(100,2,"*") }}
+  {% endif %}
+{% endfor %}
+
+
+Leadership, Involvement, & Service
+==================================
+
+{{ entrylist(extracurricular) }}

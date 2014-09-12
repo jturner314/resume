@@ -1,0 +1,129 @@
+%%<
+Copyright (C) 2014  Jim Turner
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+>%%
+
+%<- macro entrylist(entries) ->%
+  %<- for entry in entries ->%
+\cventry{
+    %<- if entry.date is defined ->%
+<< entry.date >>
+    %<- endif ->%
+}{
+    %<- if entry.title is defined ->%
+<< entry.title >>
+    %<- endif ->%
+}{
+    %<- if entry.name is defined ->%
+<< entry.name >>
+    %<- endif ->%
+}{
+    %<- if entry.location is defined ->%
+<< entry.location >>
+    %<- endif ->%
+}{
+    %<- if entry.grade is defined ->%
+<< entry.grade >>
+    %<- endif ->%
+}   %<- if entry.description is defined >%
+      %< if entry.description is string >%
+{<< entry.description >>}
+      %< elif entry.description is sequence >%
+{
+  \begin{itemize}
+        %< for item in entry.description >%
+  \item << item >>
+        %< endfor >%
+  \end{itemize}
+}
+      %< endif >%
+    %< else >%
+{}
+    %< endif >%
+    %<- if not loop.last >%
+
+    %< endif ->%
+  %<- endfor ->%
+%<- endmacro ->%
+
+\documentclass[10pt,letterpaper,sans]{moderncv}
+
+\moderncvstyle{bankingcustom}
+\moderncvcolor{bluecustom}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[condensed]{tgheros}
+\nopagenumbers{}
+
+\usepackage[hmargin=0.65in,vmargin=0.5in,noheadfoot]{geometry}
+
+\renewcommand{\refname}{Publications \& Presentations}
+
+\name{<< contact.name.first >>}{<< contact.name.last >>}
+%< if contact.address is defined >%
+\address{<< contact.address.street >>}{<< contact.address.city >>}
+  %< if contact.address.country is defined >%
+{<< contact.address.country >>}
+  %< endif >%
+%< endif >%
+%< if contact.phone is defined >%
+\phone{<< contact.phone >>}
+%< endif >%
+%< if contact.email is defined >%
+\email{<< contact.email >>}
+%< endif >%
+%< if contact.linkedin is defined >%
+\social[linkedin]{<< contact.linkedin >>}
+%< endif >%
+
+\begin{document}
+\makecvtitle
+
+\section{Summary}
+
+<< summary >>
+
+\section{Education}
+
+<< entrylist(education) >>
+
+% Bibliography
+\begin{thebibliography}{99}
+%< for item in publications >%
+\bibitem{<< item.key >>} << item.text >>
+%< endfor >%
+\end{thebibliography}
+
+\section{Work \& Research Experience}
+
+<< entrylist(experience) >>
+
+\section{Skills}
+
+%< for skill in skills >%
+{\textbf{<< skill.name >>}
+  %<- if skill.description is defined ->%
+: << skill.description >>
+  %<- endif ->%
+  %<- if not loop.last ->%
+}\hfill\labelitemi{}\hfill%
+  %< endif >%
+%< endfor >%
+
+
+\section{Leadership, Involvement, \& Service}
+
+<< entrylist(extracurricular) >>
+
+\end{document}
