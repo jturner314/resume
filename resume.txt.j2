@@ -17,8 +17,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 {%- macro entrylist(entries) -%}
   {% for entry in entries %}
-    {% if entry.name is defined and entry.date is defined %}
+    {% if entry.name_short is defined and entry.date is defined %}
+{{ entry.name_short|left_right(entry.date,100) }}
+    {% elif entry.name is defined and entry.date is defined %}
 {{ entry.name|left_right(entry.date,100) }}
+    {% elif entry.name_short is defined %}
+{{ entry.name_short }}
     {% elif entry.name is defined %}
 {{ entry.name }}
     {% elif entry.date is defined %}

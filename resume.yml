@@ -53,6 +53,7 @@ publications:
       Applied Mechanics//. Lombard, IL, June 2013."
 experience:
   - name: North Carolina State University, Dept. of Mechanical & Aerospace Engineering
+    name_short: N.C. State Univ., Dept. of Mechanical & Aerospace Engineering
     title: Undergraduate Researcher
     date: Sept.~2011--present
     description:
@@ -89,6 +90,7 @@ experience:
         modified existing software to work with EPA's data; conducted software
         training for staff."
   - name: U.S.~EPA/Shaw University Research Apprenticeship/Internship Program
+    name_short: U.S.~EPA/Shaw University Research Apprenticeship Program
     title: Research Apprentice
     date: June~2007~--~May~2011
     location: Raleigh, NC

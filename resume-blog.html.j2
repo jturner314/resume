@@ -19,7 +19,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   {% for entry in entries %}
 <div class="resume-entry">
   <h3 class="resume-entry-head">
-    {% if entry.name is defined %}
+    {% if entry.name_short is defined %}
+    <span class="resume-entry-name">{{ entry.name_short }}</span>
+    {% elif entry.name is defined %}
     <span class="resume-entry-name">{{ entry.name }}</span>
     {% endif %}
     {% if entry.date is defined %}
