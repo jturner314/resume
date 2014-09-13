@@ -18,24 +18,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 {%- macro entrylist(entries) -%}
   {% for entry in entries %}
     {% if entry.name_short is defined and entry.date is defined %}
-{{ entry.name_short|left_right(entry.date,100) }}
+{{ entry.name_short|left_right(entry.date,90) }}
     {% elif entry.name is defined and entry.date is defined %}
-{{ entry.name|left_right(entry.date,100) }}
+{{ entry.name|left_right(entry.date,90) }}
     {% elif entry.name_short is defined %}
 {{ entry.name_short }}
     {% elif entry.name is defined %}
 {{ entry.name }}
     {% elif entry.date is defined %}
-{{ ""|left_right(entry.date,100) }}
+{{ ""|left_right(entry.date,90) }}
     {% endif %}
     {% if entry.title is defined and entry.grade is defined and entry.location is defined %}
-{{ (entry.title + ", " + entry.grade)|left_right(entry.location,100) }}
+{{ (entry.title + ", " + entry.grade)|left_right(entry.location,90) }}
     {% elif entry.title is defined and entry.location is defined %}
-{{ entry.title|left_right(entry.location,100) }}
+{{ entry.title|left_right(entry.location,90) }}
     {% elif entry.title is defined %}
 {{ entry.title }}
     {% elif entry.location is defined %}
-{{ ""|left_right(entry.location,100) }}
+{{ ""|left_right(entry.location,90) }}
     {% elif entry.title is not defined and entry.grade is not defined and entry.location is not defined %}
     {% else %}
     {# throw error on undefined #}
@@ -44,11 +44,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     {% if entry.description is defined %}
       {% if entry.description is string %}
 
-{{ entry.description|hard_wrap(100,4) }}
+{{ entry.description|hard_wrap(90,4) }}
       {% else %}
 
         {% for item in entry.description %}
-{{ item|hard_wrap(100,4,"*") }}
+{{ item|hard_wrap(90,4,"*") }}
         {% endfor %}
       {% endif %}
     {% endif %}
@@ -82,7 +82,7 @@ Social:  linkedin.com/in/{{ contact.linkedin }}
 Summary
 =======
 
-{{ summary|hard_wrap(100) }}
+{{ summary|hard_wrap(90) }}
 
 
 Education
@@ -94,7 +94,7 @@ Publications & Presentations
 ============================
 
 {% for item in publications %}
-{{ item.text|hard_wrap(100,0,"",2) }}
+{{ item.text|hard_wrap(90,0,"",2) }}
 
 {% endfor %}
 
@@ -108,9 +108,9 @@ Skills
 
 {% for skill in skills %}
   {% if skill.description is defined %}
-{{ (skill.name + ": " + skill.description)|hard_wrap(100,2,"*") }}
+{{ (skill.name + ": " + skill.description)|hard_wrap(90,2,"*") }}
   {% else %}
-{{ skill.name|hard_wrap(100,2,"*") }}
+{{ skill.name|hard_wrap(90,2,"*") }}
   {% endif %}
 {% endfor %}
 
