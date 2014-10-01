@@ -59,55 +59,57 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   {% endfor %}
 {%- endmacro -%}
 
----
-layout: page
-title: Resume
-in_header: yes
-permalink: /resume/
----
+<html>
+  <head>
+    <title>Resume</title>
+    <meta name="summary" content="{{ summary}}">
+  </head>
+  <body>
+    <div class="resume">
+      <h2 id="summary">Summary</h2>
+      <p class="resume-summary">
+        {{ summary }}
+      </p>
 
-<div class="resume">
-  <h2 id="summary">Summary</h2>
-  <p class="resume-summary">
-    {{ summary }}
-  </p>
+      <h2 id="education">Education</h2>
+      {{ entrylist(education)|indent(6) }}
 
-  <h2 id="education">Education</h2>
-  {{ entrylist(education)|indent(6) }}
+      <h2 id="publications">Publications &amp; Presentations</h2>
+      {% for item in publications %}
+      <p class="resume-publication">
+        {% if item.url is defined %}
+        <a href="{{ item.url }}">{{ item.text }}</a>
+        {% else %}
+        {{ item.text }}
+        {% endif %}
+      </p>
+      {% endfor %}
 
-  <h2 id="publications">Publications &amp; Presentations</h2>
-  {% for item in publications %}
-  <p class="resume-publication">
-    {% if item.url is defined %}
-    <a href="{{ item.url }}">{{ item.text }}</a>
-    {% else %}
-    {{ item.text }}
-    {% endif %}
-  </p>
-  {% endfor %}
+      <h2 id="experience">Work &amp; Research Experience</h2>
+      {{ entrylist(experience)|indent(6) }}
 
-  <h2 id="experience">Work &amp; Research Experience</h2>
-  {{ entrylist(experience)|indent(6) }}
+      <h2 id="skills">Skills</h2>
+      <ul class="resume-skills">
+      {% for skill in skills %}
+        <li>
+          <em>{{ skill.name }}</em>
+          {%- if skill.description is defined -%}
+          : {{ skill.description }}
+          {%- endif -%}
+        </li>
+        {% if not loop.last %}
+        <!-- This is a hack to get bullets evenly spaced between the skills. -->
+        <!-- If you have a better solution, please let me know. -->
+        <li class="bullet">
+          &#8226;
+        </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
 
-  <h2 id="skills">Skills</h2>
-  <ul class="resume-skills">
-  {% for skill in skills %}
-    <li>
-      <em>{{ skill.name }}</em>
-      {%- if skill.description is defined -%}
-      : {{ skill.description }}
-      {%- endif -%}
-    </li>
-    {% if not loop.last %}
-    <!-- This is a hack to get bullets evenly spaced between the skills. If you have a better solution, please let me know. -->
-    <li class="bullet">
-      &#8226;
-    </li>
-    {% endif %}
-  {% endfor %}
-  </ul>
-
-  <h2 id="extracurricular">Leadership, Involvement, &amp; Service</h2>
-  {{ entrylist(extracurricular)|indent(6) }}
-  </div>
-</div>
+      <h2 id="extracurricular">Leadership, Involvement, &amp; Service</h2>
+      {{ entrylist(extracurricular)|indent(6) }}
+      </div>
+    </div>
+  </body>
+</html>
