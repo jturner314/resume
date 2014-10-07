@@ -66,7 +66,7 @@ The usage details for the script are::
 
    optional arguments:
      -h, --help        show this help message and exit
-     --config CONFIG   Path to config YAML file.
+     --config CONFIG   Path to config YAML file. (default: config.yml)
 
 Dependencies
 ============

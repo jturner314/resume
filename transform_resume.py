@@ -192,7 +192,9 @@ def load_config(path):
         return yaml.safe_load(f)
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Render resume templates.")
+    parser = argparse.ArgumentParser(
+        description="Render resume templates.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('type', type=str, choices=['latex', 'html', 'txt'],
                         help="Output file type.")
     parser.add_argument('template', type=str,
