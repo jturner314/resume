@@ -36,7 +36,7 @@ After parsing the YAML data files, the script applies the regex replacements in
 characters, apply simple markup, etc. ``config.yml`` also contains configuration
 for which delimiters to use for Jinja2 (because the default delimiters don't
 work well for LaTeX) and the desired line endings (to enable DOS line endings in
-the TXT output for those poor MS Notepad users).
+the TXT output for those unfortunate MS Notepad users).
 
 The resulting data is then applied to the various ``*.j2`` templates to generate
 the output. The LaTeX output is then compiled to a PDF. Note that the HTML
