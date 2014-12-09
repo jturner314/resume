@@ -107,8 +107,6 @@ skills:
   - name: Origami
   - name: Statistics & Data Analysis
 extracurricular:
-  - name: Presidential Volunteer Service Awards
-    description: Six Gold Medals for performing more than 1,700 hours of community service.
   - name: "N.C. State Engineers' Council"
     title: Department Representative, Secretary, Committee Chair
     date: 2011--present
@@ -133,3 +131,5 @@ extracurricular:
   - name: General H. Hugh Shelton Leadership Center
     title: Coach/Mentor/Trainer, Organizing Subcommittee Chairman, Peer Leader
     date: 2008--2013
+  - name: Presidential Volunteer Service Awards
+    description: Six Gold Medals for performing more than 1,700 hours of community service.
