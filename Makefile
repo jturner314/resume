@@ -15,7 +15,7 @@
 
 .PHONY: default nonweb web
 
-default: resume.pdf resume-web.pdf resume-blog.html resume.txt resume-web.txt
+default: resume.pdf resume-web.pdf resume-blog.html resume-sphinx.rst resume.txt resume-web.txt
 
 nonweb: resume.pdf resume.txt
 
@@ -35,6 +35,9 @@ resume-web.pdf: resume-web.tex moderncvcolorbluecustom.sty moderncvstylebankingc
 
 resume-blog.html: resume-blog.html.j2 transform_resume.py config.yml resume.yml
 	python3 transform_resume.py html $< $@ resume.yml
+
+resume-sphinx.rst: resume-sphinx.rst.j2 transform_resume.py config.yml resume.yml
+	python3 transform_resume.py rst $< $@ resume.yml
 
 resume.txt: resume.txt.j2 transform_resume.py config.yml resume.yml resume-nonweb.yml
 	python3 transform_resume.py txt $< $@ resume.yml resume-nonweb.yml

@@ -1,0 +1,119 @@
+{#
+Copyright (C) 2014  Jim Turner
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#}
+
+{%- macro entrylist(entries) -%}
+{% for entry in entries %}
+.. container:: resume-entry
+
+   .. container:: resume-entry-head
+
+      {% if entry.name_short is defined %}
+      .. container:: resume-entry-name
+
+         {{ entry.name_short }}
+
+      {% elif entry.name is defined %}
+      .. container:: resume-entry-name
+
+         {{ entry.name }}
+
+      {% endif %}
+      {% if entry.date is defined %}
+      .. container:: resume-entry-date
+
+         {{ entry.date }}
+
+      {% endif %}
+
+   {% if entry.title is defined or entry.location is defined %}
+   .. container:: resume-entry-subhead
+
+      {% if entry.title is defined %}
+      .. container:: resume-entry-title-grade
+
+        {% if entry.grade is defined %}
+        {{ entry.title }}, {{ entry.grade }}
+        {% else %}
+        {{ entry.title }}
+        {% endif %}
+
+      {% endif %}
+      {% if entry.location is defined %}
+      .. container:: resume-entry-location
+
+         {{ entry.location }}
+
+      {% endif %}
+   {% endif %}
+
+
+   {% if entry.description is defined %}
+   .. container:: resume-entry-description
+
+     {% if entry.description is string %}
+      {{ entry.description }}
+     {% else %}
+       {% for item in entry.description %}
+      * {{ item }}
+       {% endfor %}
+     {% endif %}
+   {% endif %}
+
+{% endfor %}
+{%- endmacro -%}
+
+Summary
+=======
+
+{{ summary }}
+
+Education
+=========
+
+{{ entrylist(education) }}
+
+Publications & Presentations
+============================
+
+{% for item in publications %}
+.. rst-class:: resume-publication
+
+  {% if item.url is defined %}
+   `{{ item.text }} <{{ item.url }}>`_
+  {% else %}
+   {{ item.text }}
+  {% endif %}
+
+{% endfor %}
+
+Work & Research Experience
+==========================
+
+{{ entrylist(experience) }}
+
+Skills
+======
+
+{% for skill in skills %}
+* *{{ skill.name }}*{% if skill.description is defined %}: {{ skill.description }}{% endif %}
+
+{% endfor %}
+
+Leadership, Involvement, & Service
+======================================
+
+{{ entrylist(extracurricular) }}
