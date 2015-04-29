@@ -21,7 +21,7 @@ This a system to generate PDF (via LaTeX), HTML, TXT, and Sphinx resumes from a
 YAML file containing all of the resume content. It is partly inspired by
 `Ming-Ho Yee's resume project <https://github.com/mhyee/resume>`_. A single
 Python script performs the transformation using `PyYAML
-<http://pyyaml.org/wiki/PyYAML>`_ to parse the data file and `Jinja2
+<http://pyyaml.org/wiki/PyYAML>`_ to parse the data file(s) and `Jinja2
 <http://jinja.pocoo.org/>`_ to fill the data into templates.
 
 The primary resume data is stored in ``resume.yml``. A second YAML file
