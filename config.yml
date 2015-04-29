@@ -46,7 +46,7 @@ txt:
     - ['//(.*?)//', '\1']
   jinja2_delim: ['{%', '%}', '{{', '}}', '{#', '#}']
   line_endings: "\r\n"
-rst:
+sphinx:
   replacements:
     - ['---', '—']
     - ['--', '–']
