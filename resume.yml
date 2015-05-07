@@ -20,17 +20,17 @@ education:
     location: Raleigh, NC
     description:
       - "//2015 NCSU Mechanical & Aerospace Engineering Senior Award for Leadership//"
-      - "//2014 Goldwater Scholar//: Merit-based, national scholarship"
-      - "//2011 NCSU Park Scholar//: Merit-based, full-ride scholarship"
+      - "//2014 Goldwater Scholar:// Merit-based, national scholarship"
+      - "//2011 NCSU Park Scholar:// Merit-based, full-ride scholarship"
   - name: Middle Creek High School
     title: Valedictorian
     grade: 4.00~GPA, Perfect SAT score (2400)
     date: 2007--2011
     location: Apex, NC
     description:
-      - "//2011 National Honor Society's National Scholar//:
+      - "//2011 National Honor Society's National Scholar://
         Merit-based, national scholarship (1 selected annually)"
-      - "//2011 U.S. Presidential Scholar//:
+      - "//2011 U.S. Presidential Scholar://
         National recognition by the U.S. President and Secretary of Education"
 publications:
   - key: Mack2014
@@ -44,14 +44,14 @@ publications:
     text:
       "Turner, J. D. and Y. Zhu. ``Three-dimensional structures from
       electrically-activated self-folding of polymer sheets''. //Summer
-      Undergraduate Research Symposium//. North Carolina State University.
+      Undergraduate Research Symposium.// North Carolina State University.
       Raleigh, NC, July 2014."
   - key: Qin2013
     text:
       "Qin, Q., R. W. Mailen, J. D. Turner, Y. Liu, J. Genzer, M. D. Dickey,
       and Y. Zhu. ``Self-Folding of Polymer Sheets into Origami: Modeling and
       Experiments''. //SEM Annual Conference and Exposition on Experimental and
-      Applied Mechanics//. Lombard, IL, June 2013."
+      Applied Mechanics.// Lombard, IL, June 2013."
 experience:
   - name: N.C. State University, Dept. of Mechanical & Aerospace Engineering
     name_short: N.C. State Univ., Dept. of Mechanical & Aerospace Engineering
@@ -81,7 +81,7 @@ experience:
         of state-of-the-art munitions effects simulation software.
       - Developed custom computer programs in Python for file manipulation,
         statistics, and analysis of engineering data.
-      - Received the //Above and Beyond the Call of Duty Award//.
+      - Received the //Above and Beyond the Call of Duty Award.//
   - name: U.S.~Environmental Protection Agency
     title: Research Intern
     date: Summer 2010 & Summer 2011
