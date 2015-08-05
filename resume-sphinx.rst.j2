@@ -92,10 +92,9 @@ Publications & Presentations
 {% for item in publications %}
 .. rst-class:: resume-publication
 
+  {{ item.text }}
   {% if item.url is defined %}
-   `{{ item.text }} <{{ item.url }}>`_
-  {% else %}
-   {{ item.text }}
+  (`Link <{{ item.url }}>`_)
   {% endif %}
 
 {% endfor %}
