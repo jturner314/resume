@@ -17,19 +17,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 {%- macro entrylist(entries) -%}
 {% for entry in entries %}
+  {% if entry.name_short is defined %}
+    {% set name = entry.name_short %}
+  {% elif entry.name is defined %}
+    {% set name = entry.name %}
+  {% elif entry.degree is defined %}
+    {% set name = entry.degree %}
+  {% endif %}
+  {% if entry.title is defined %}
+    {% set title = entry.title %}
+  {% elif entry.university is defined %}
+    {% set title = entry.university %}
+  {% endif %}
+
 .. container:: resume-entry
 
    .. container:: resume-entry-head
 
-      {% if entry.name_short is defined %}
+      {% if name is defined %}
       .. container:: resume-entry-name
 
-         {{ entry.name_short }}
-
-      {% elif entry.name is defined %}
-      .. container:: resume-entry-name
-
-         {{ entry.name }}
+         {{ name }}
+        {% if entry.grade is defined %}
+         – {{ entry.grade }}
+        {% endif %}
 
       {% endif %}
       {% if entry.date is defined %}
@@ -42,14 +53,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
    {% if entry.title is defined or entry.location is defined %}
    .. container:: resume-entry-subhead
 
-      {% if entry.title is defined %}
-      .. container:: resume-entry-title-grade
+      {% if title is defined %}
+      .. container:: resume-entry-title
 
-        {% if entry.grade is defined %}
-        {{ entry.title }}, {{ entry.grade }}
-        {% else %}
-        {{ entry.title }}
-        {% endif %}
+        {{ title }}
 
       {% endif %}
       {% if entry.location is defined %}
@@ -59,7 +66,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
       {% endif %}
    {% endif %}
-
 
    {% if entry.description is defined %}
    .. container:: resume-entry-description

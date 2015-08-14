@@ -17,25 +17,36 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 {%- macro entrylist(entries) -%}
   {% for entry in entries %}
+  {% if entry.name_short is defined %}
+    {% set name = entry.name_short %}
+  {% elif entry.name is defined %}
+    {% set name = entry.name %}
+  {% elif entry.degree is defined %}
+    {% set name = entry.degree %}
+  {% endif %}
+  {% if entry.title is defined %}
+    {% set title = entry.title %}
+  {% elif entry.university is defined %}
+    {% set title = entry.university %}
+  {% endif %}
 <div class="resume-entry">
   <h3 class="resume-entry-head">
-    {% if entry.name_short is defined %}
-    <span class="resume-entry-name">{{ entry.name_short }}</span>
-    {% elif entry.name is defined %}
-    <span class="resume-entry-name">{{ entry.name }}</span>
+    {% if name is defined %}
+    <span class="resume-entry-name">
+    {{ name }}
+    {% if entry.grade is defined %}
+    &ndash; {{ entry.grade }}
+    {% endif %}
+    </span>
     {% endif %}
     {% if entry.date is defined %}
     <span class="resume-entry-date">{{ entry.date }}</span>
     {% endif %}
   </h3>
   <div class="resume-entry-subhead">
-    {% if entry.title is defined %}
-    <span class="resume-entry-title-grade">
-      {% if entry.grade is defined %}
-      {{ entry.title }}, {{ entry.grade }}
-      {% else %}
-      {{ entry.title }}
-      {% endif %}
+    {% if title is defined %}
+    <span class="resume-entry-title">
+      {{ title }}
     </span>
     {% endif %}
     {% if entry.location is defined %}

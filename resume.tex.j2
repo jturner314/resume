@@ -24,13 +24,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 }{
     %<- if entry.title is defined ->%
 << entry.title >>
+    %<- elif entry.university is defined ->%
+<< entry.university >>
+      %<- if entry.location is defined ->%
+, << entry.location >>
+      %<- endif ->%
     %<- endif ->%
 }{
     %<- if entry.name is defined ->%
 << entry.name >>
+    %<- elif entry.degree is defined ->%
+<< entry.degree >>
     %<- endif ->%
 }{
-    %<- if entry.location is defined ->%
+    %<- if entry.location is defined and entry.university is not defined ->%
 << entry.location >>
     %<- endif ->%
 }{

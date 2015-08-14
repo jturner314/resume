@@ -13,12 +13,13 @@ summary:
   development, testing and verification, data analysis, and software
   development.
 education:
-  - name: North Carolina State University
-    title: B.S.~Mechanical Engineering, Spanish & Computer Programming minors
-    grade: 4.00~GPA
+  - degree: B.S.~Mechanical Engineering
+    university: North Carolina State University
+    location: Raleigh, NC
+    grade: Valedictorian, 4.00~GPA
     date: 2011--2015
-    location: Raleigh
     description:
+      - "//Minors:// Spanish & Computer Programming"
       - "//2015 NCSU Mechanical & Aerospace Engineering Senior Award for Leadership//"
       - "//2014 Goldwater Scholar:// Merit-based, national scholarship"
       - "//2011 NCSU Park Scholar:// Merit-based, full-ride scholarship"

@@ -19,29 +19,41 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 {%- macro entrylist(entries) -%}
   {% for entry in entries %}
-    {% if entry.name_short is defined and entry.date is defined %}
-{{ entry.name_short|left_right(entry.date,WIDTH) }}
-    {% elif entry.name is defined and entry.date is defined %}
-{{ entry.name|left_right(entry.date,WIDTH) }}
-    {% elif entry.name_short is defined %}
-{{ entry.name_short }}
+    {% if entry.name_short is defined %}
+      {% set name = entry.name_short %}
     {% elif entry.name is defined %}
-{{ entry.name }}
+      {% set name = entry.name %}
+    {% elif entry.degree is defined %}
+      {% set name = entry.degree %}
+    {% endif %}
+    {% if entry.title is defined %}
+      {% set title = entry.title %}
+    {% elif entry.university is defined %}
+      {% set title = entry.university %}
+    {% endif %}
+    {# First line #}
+    {% if name is defined and entry.grade is defined and entry.date is defined %}
+{{ (name + " – " + entry.grade)|left_right(entry.date,WIDTH) }}
+    {% elif name is defined and entry.grade is defined %}
+{{ name }} – {{ entry.grade }}
+    {% elif name is defined and entry.date is defined %}
+{{ name|left_right(entry.date,WIDTH) }}
+    {% elif entry.grade is defined and entry.date is defined %}
+{{ entry.grade|left_right(entry.date,WIDTH) }}
+    {% elif name is defined %}
+{{ name }}
+    {% elif entry.grade is defined %}
+{{ entry.grade }}
     {% elif entry.date is defined %}
 {{ ""|left_right(entry.date,WIDTH) }}
     {% endif %}
-    {% if entry.title is defined and entry.grade is defined and entry.location is defined %}
-{{ (entry.title + ", " + entry.grade)|left_right(entry.location,WIDTH) }}
-    {% elif entry.title is defined and entry.location is defined %}
-{{ entry.title|left_right(entry.location,WIDTH) }}
-    {% elif entry.title is defined %}
-{{ entry.title }}
+    {# Second line #}
+    {% if title is defined and entry.location is defined %}
+{{ title|left_right(entry.location,WIDTH) }}
+    {% elif title is defined %}
+{{ title }}
     {% elif entry.location is defined %}
 {{ ""|left_right(entry.location,WIDTH) }}
-    {% elif entry.title is not defined and entry.grade is not defined and entry.location is not defined %}
-    {% else %}
-    {# throw error on undefined #}
-    {{ entry.title }}{{ entry.grade }}{{ entry.location }}
     {% endif %}
     {% if entry.description is defined %}
       {% if entry.description is string %}
