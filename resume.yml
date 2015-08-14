@@ -50,6 +50,15 @@ publications:
       Experiments''. //SEM Annual Conference and Exposition on Experimental and
       Applied Mechanics.// Lombard, IL, June 2013."
 experience:
+  - name: Applied Research Associates
+    title: Engineering Intern
+    date: May--Aug.~2015
+    location: Raleigh, NC
+    description:
+      - Designed and developed graphical, memory management, and simulation
+        components of vulnerability assessment engineering software.
+      - Developed custom Python scripts for version control, data visualization
+        and analysis, and systems integration route visualization.
   - name: N.C. State University, Dept. of Mechanical & Aerospace Engineering
     name_short: N.C. State Univ., Dept. of Mechanical & Aerospace Engineering
     title: Undergraduate Researcher
