@@ -8,11 +8,17 @@ contact:
   email: jturner314@gmail.com
   web: https://jim.turner.link
 summary:
-  Mechanical engineering undergraduate student with research and industry
-  experience in mechanical simulation, electromechanical controls, product
-  development, testing and verification, data analysis, and software
-  development.
+  Mechanical engineering graduate student with research and industry experience
+  in mechanical simulation, electromechanical controls, product development,
+  testing and verification, data analysis, and software development.
 education:
+  - degree: Ph.D.~Mechanical Engineering
+    university: Duke University
+    location: Durham, NC
+    date: 2015--present
+    description:
+      - "//2015 James B.\ Duke Fellowship:// Merit-based, four-year supplemental fellowship"
+      - "//2015 Pratt/Gardner Fellowship:// Merit-based fellowship"
   - degree: B.S.~Mechanical Engineering
     university: North Carolina State University
     location: Raleigh, NC
