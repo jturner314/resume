@@ -102,7 +102,7 @@ experience:
 skills:
   - name: Spanish
   - name: Programming
-    description: Python, Java, VBA, C, C++, Bash, Git
+    description: Python, C, C++, Java, Bash, Git
   - name: Linux
   - name: LaTeX
   - name: Origami
