@@ -82,15 +82,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 {% endfor %}
 {%- endmacro -%}
 
+.. _resume-summary:
+
 Summary
 =======
 
 {{ summary }}
 
+.. _resume-education:
+
 Education
 =========
 
 {{ entrylist(education) }}
+
+.. _resume-publications:
 
 Publications & Presentations
 ============================
@@ -105,10 +111,14 @@ Publications & Presentations
 
 {% endfor %}
 
+.. _resume-experience:
+
 Work & Research Experience
 ==========================
 
 {{ entrylist(experience) }}
+
+.. _resume-skills:
 
 Skills
 ======
@@ -117,6 +127,8 @@ Skills
 * *{{ skill.name }}*{% if skill.description is defined %}: {{ skill.description }}{% endif %}
 
 {% endfor %}
+
+.. _resume-extracurricular:
 
 Leadership, Involvement, & Service
 ======================================
