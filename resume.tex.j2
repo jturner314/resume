@@ -15,8 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 >%%
 
-%<- macro entrylist(entries) ->%
-  %<- for entry in entries ->%
+%<- macro oneentry(entry) ->%
 \cventry{
     %<- if entry.date is defined ->%
 << entry.date >>
@@ -59,6 +58,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     %< else >%
 {}
     %< endif >%
+%< endmacro >%
+
+%<- macro entrylist(entries) ->%
+  %<- for entry in entries ->%
+<< oneentry(entry) >>
     %<- if not loop.last >%
 
     %< endif ->%

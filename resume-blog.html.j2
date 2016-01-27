@@ -15,8 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #}
 
-{%- macro entrylist(entries) -%}
-  {% for entry in entries %}
+{%- macro oneentry(entry) -%}
   {% if entry.name_short is defined %}
     {% set name = entry.name_short %}
   {% elif entry.name is defined %}
@@ -67,7 +66,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       {% endif %}
     {% endif %}
 </div>
-  {% endfor %}
+{% endmacro %}
+
+{%- macro entrylist(entries) -%}
+  {% for entry in entries %}{{ oneentry(entry) }}{% endfor %}
 {%- endmacro -%}
 
 <html>
