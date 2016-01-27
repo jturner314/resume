@@ -107,18 +107,18 @@ skills:
   - name: Origami
   - name: Statistics & Data Analysis
 extracurricular:
+  - name: National Honor/Professional Societies
+    date: 2011--2016
+    description: Tau Beta Pi, Phi Beta Kappa, Phi Kappa Phi, ASME
+  - name: University Honor Societies
+    date: 2011--2015
+    description: NCSU Golden Chain, NCSU University Honors Program
   - name: "N.C. State Engineers' Council"
     title: Department Representative, Secretary, Committee Chair
     date: 2011--2015
     description:
       - Managed two events with panels, mock interviews, and group sessions to
         prepare 280 students for Engineering Career Fairs.
-  - name: N.C. State Honor Societies
-    date: 2011--2015
-    description: Tau Beta Pi, Phi Beta Kappa, Phi Kappa Phi, Golden Chain, University Honors Program
-  - name: N.C. State Organizations
-    date: 2011--2015
-    description: ASME
   - name: N.C. State Alternative Service Break
     title: Team Leader
     date: 2012--2013
