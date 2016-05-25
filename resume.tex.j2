@@ -83,10 +83,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 \name{<< contact.name.first >>}{<< contact.name.last >>}
 %< if contact.address is defined >%
-\address{<< contact.address.street >>}{<< contact.address.city >>}
-  %< if contact.address.country is defined >%
+\address{
+  %<- if contact.address.street is defined ->%
+  << contact.address.street >>
+  %<- endif ->%
+}{
+  %<- if contact.address.city is defined ->%
+  << contact.address.city >>
+  %<- endif ->%
+}
+%< if contact.address is defined and contact.address.country is defined >%
 {<< contact.address.country >>}
-  %< endif >%
+%< endif >%
 %< endif >%
 %< if contact.phone is defined >%
 \phone{<< contact.phone >>}

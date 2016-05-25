@@ -96,9 +96,16 @@
     \ifthenelse{\equal{\@title}{}}{}{\titlestyle{~|~\@title}}\\% \isundefined doesn't work on \@title, as LaTeX itself defines \@title (before it possibly gets redefined by \title) 
     % detailed information
     \addressfont\color{color2}%
-    \ifthenelse{\isundefined{\@addressstreet}}{}{\addtomaketitle{\addresssymbol\@addressstreet}%
-      \ifthenelse{\equal{\@addresscity}{}}{}{\addtomaketitle[~--~]{\@addresscity}}% if \addresstreet is defined, \addresscity and \addresscountry will always be defined but could be empty
-      \ifthenelse{\equal{\@addresscountry}{}}{}{\addtomaketitle[~--~]{\@addresscountry}}%
+    \ifthenelse{\isundefined{\@addressstreet}}{}{%
+      \ifthenelse{\equal{\@addressstreet}{}}{%
+        \addtomaketitle{\addresssymbol}%
+        \ifthenelse{\equal{\@addresscity}{}}{}{\addtomaketitle{\@addresscity}}%
+        \ifthenelse{\equal{\@addresscountry}{}}{}{\addtomaketitle[~--~]{\@addresscountry}}%
+      }{%
+        \addtomaketitle{\addresssymbol\@addressstreet}%
+        \ifthenelse{\equal{\@addresscity}{}}{}{\addtomaketitle[~--~]{\@addresscity}}%
+        \ifthenelse{\equal{\@addresscountry}{}}{}{\addtomaketitle[~--~]{\@addresscountry}}%
+      }%
       \flushmaketitle\@firstmaketitleelementtrue\\}%
     \collectionloop{phones}{% the key holds the phone type (=symbol command prefix), the item holds the number
       \addtomaketitle{\csname\collectionloopkey phonesymbol\endcsname\collectionloopitem}}%
@@ -184,9 +191,16 @@
   \savebox{\makecvtitledetailsbox}{%
     \addressfont\color{color2}%
     \begin{tabular}[b]{@{}r@{}}%
-      \ifthenelse{\isundefined{\@addressstreet}}{}{\makenewline\addresssymbol\@addressstreet%
-        \ifthenelse{\equal{\@addresscity}{}}{}{~--~\@addresscity}% if \addresstreet is defined, \addresscity and addresscountry will always be defined but could be empty
-        \ifthenelse{\equal{\@addresscountry}{}}{}{\makenewline\@addresscountry}}%
+      \ifthenelse{\isundefined{\@addressstreet}}{}{\makenewline\addresssymbol%
+        \ifthenelse{\equal{\@addressstreet}{}}{%
+          \ifthenelse{\equal{\@addresscity}{}}{}{\@addresscity}%
+          \ifthenelse{\equal{\@addresscountry}{}}{}{\makenewline\@addresscountry}%
+        }{%
+          \@addressstreet%
+          \ifthenelse{\equal{\@addresscity}{}}{}{~--~\@addresscity}% if \addresstreet is defined, \addresscity and addresscountry will always be defined but could be empty
+          \ifthenelse{\equal{\@addresscountry}{}}{}{\makenewline\@addresscountry}%
+        }%
+      }%
       \phonesdetails% needs to be pre-rendered as loops and tabulars seem to conflict
       \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
       \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol\url{\@homepage}}%

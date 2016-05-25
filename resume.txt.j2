@@ -79,11 +79,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 {{ contact.name.first }} {{ contact.name.last }}
 {{ "#" * (contact.name.first + " " + contact.name.last)|length }}
 
-{% if contact.address is defined %}
+{% if contact.address is defined and contact.address.street is defined and contact.address.city is defined %}
 Address: {{ contact.address.street }} – {{ contact.address.city }}
-{% if contact.address.country is defined %}
-{{ contact.address.country }}
+{% elif contact.address is defined and contact.address.city is defined %}
+Address: {{ contact.address.city }}
 {% endif %}
+{% if contact.address is defined and contact.address.country is defined %}
+         {{ contact.address.country }}
 {% endif %}
 {% if contact.phone is defined %}
 Phone:   {{ contact.phone }}
