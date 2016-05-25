@@ -30,6 +30,14 @@ education:
       - "//2014 Goldwater Scholar:// Merit-based, national scholarship"
       - "//2011 NCSU Park Scholar:// Merit-based, full-ride scholarship"
 publications:
+  - key: Turner2016
+    url: https://jim.turner.link/_downloads/IDETC2016-60235.pdf
+    text:
+      "Turner, J. D. and B. P. Mann. ``Sensitivity of Final Field Position to
+      the Punt Initial Conditions in American Football''. //Proceedings of the
+      ASME 2016 International Design Engineering Technical Conferences &
+      Computers and Information in Engineering Conference.// Charlotte, NC,
+      August 2016."
   - key: Mack2014
     url: http://dx.doi.org/10.1016/j.neuro.2013.11.008
     text:
