@@ -101,6 +101,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <h2 id="experience">Work &amp; Research Experience</h2>
       {{ entrylist(experience)|indent(6) }}
 
+      {% if skills is defined %}
       <h2 id="skills">Skills</h2>
       <ul class="resume-skills">
       {% for skill in skills %}
@@ -119,6 +120,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         {% endif %}
       {% endfor %}
       </ul>
+      {% endif %}
 
       <h2 id="extracurricular">Leadership, Involvement, &amp; Service</h2>
       {{ entrylist(extracurricular)|indent(6) }}

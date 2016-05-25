@@ -98,14 +98,6 @@ experience:
     description:
       - "Developed multiple custom computer programs and scripts to analyze
         experimental data; modified existing software to work with EPA's data."
-skills:
-  - name: Spanish
-  - name: Programming
-    description: Python, C, C++, Java, Bash, Git
-  - name: Linux
-  - name: LaTeX
-  - name: Origami
-  - name: Statistics & Data Analysis
 extracurricular:
   - name: National Honor/Professional Societies
     date: 2011--2016
