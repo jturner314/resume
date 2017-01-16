@@ -25,9 +25,10 @@ education:
     location: Raleigh, NC
     grade: Valedictorian, 4.00~GPA
     date: 2011--2015
+    multicols: 2
     description:
       - "//Minors:// Spanish & Computer Programming"
-      - "//2015 NCSU Mechanical & Aerospace Engineering Senior Award for Leadership//"
+      - "//2015 NCSU Mech.~& Aero.~Engineering Senior Award for Leadership//"
       - "//2014 Goldwater Scholar:// Merit-based, national scholarship"
       - "//2011 NCSU Park Scholar:// Merit-based, full-ride scholarship"
 publications:

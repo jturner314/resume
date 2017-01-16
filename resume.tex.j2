@@ -44,17 +44,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 << entry.grade >>
     %<- endif ->%
 }   %<- if entry.description is defined >%
-      %< if entry.description is string >%
-{<< entry.description >>}
-      %< elif entry.description is sequence >%
 {
+      %< if entry.multicols is defined >%
+  \begin{multicols}{<< entry.multicols >>}
+      %< endif >%
+      %< if entry.description is string >%
+  << entry.description >>
+      %< elif entry.description is sequence >%
   \begin{itemize}
         %< for item in entry.description >%
   \item << item >>
         %< endfor >%
   \end{itemize}
-}
       %< endif >%
+      %< if entry.multicols is defined >%
+  \end{multicols}
+      %< endif >%
+}
     %< else >%
 {}
     %< endif >%
@@ -76,6 +82,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[condensed]{tgheros}
 \nopagenumbers{}
+
+\usepackage{multicol}
 
 \usepackage[hmargin=0.65in,vmargin=0.5in,noheadfoot]{geometry}
 
