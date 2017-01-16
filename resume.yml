@@ -63,6 +63,18 @@ publications:
       Experiments''. //SEM Annual Conference and Exposition on Experimental and
       Applied Mechanics.// Lombard, IL, June 2013."
 experience:
+  - name: Duke University
+    title: Graduate Researcher
+    date: Aug.~2015~--~present
+    location: Durham, NC
+    description:
+      - Developed algorithms and software using a nonlinear model to optimize
+        athletic training routines, fit model parameters, and estimate
+        uncertainty.
+      - Developed a mathematical model, computer simulation, and analysis of
+        flight and bouncing of an American football.
+      - Designed, built, configured, and documented a computer cluster for the lab
+        group; trained the group to use the cluster.
   - name: Applied Research Associates
     title: Engineering Intern
     date: May--Aug.~2015
