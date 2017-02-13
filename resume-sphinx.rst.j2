@@ -29,12 +29,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     {% set title = entry.university %}
   {% endif %}
 
-.. container:: resume-entry
+.. container:: resume resume-entry
 
-   .. container:: resume-entry-head
+   .. container:: resume resume-entry-head
 
       {% if name is defined %}
-      .. container:: resume-entry-name
+      .. container:: resume resume-entry-name
 
          {{ name }}
         {% if entry.grade is defined %}
@@ -43,23 +43,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
       {% endif %}
       {% if entry.date is defined %}
-      .. container:: resume-entry-date
+      .. container:: resume resume-entry-date
 
          {{ entry.date }}
 
       {% endif %}
 
    {% if title is defined or entry.location is defined %}
-   .. container:: resume-entry-subhead
+   .. container:: resume resume-entry-subhead
 
       {% if title is defined %}
-      .. container:: resume-entry-title
+      .. container:: resume resume-entry-title
 
         {{ title }}
 
       {% endif %}
       {% if entry.location is defined %}
-      .. container:: resume-entry-location
+      .. container:: resume resume-entry-location
 
          {{ entry.location }}
 
@@ -67,7 +67,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
    {% endif %}
 
    {% if entry.description is defined %}
-   .. container:: resume-entry-description
+   .. container:: resume resume-entry-description
 
      {% if entry.description is string %}
       {{ entry.description }}
