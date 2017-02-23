@@ -15,7 +15,7 @@ summary:
 education:
   - degree: Ph.D.~Mechanical Engineering
     university: Duke University
-    location: Durham, NC
+    location: Durham,~NC
     grade: 4.00~GPA
     date: 2015--present
     description:
@@ -23,7 +23,7 @@ education:
       - "//2015 Pratt/Gardner Fellowship:// Merit-based fellowship"
   - degree: B.S.~Mechanical Engineering
     university: North Carolina State University
-    location: Raleigh, NC
+    location: Raleigh,~NC
     grade: Valedictorian, 4.00~GPA
     date: 2011--2015
     multicols: 2
@@ -67,7 +67,7 @@ experience:
   - name: Duke University
     title: Graduate Researcher
     date: Aug.~2015~--~present
-    location: Durham, NC
+    location: Durham,~NC
     description:
       - Developed algorithms and software using a nonlinear model to optimize
         athletic training routines, fit model parameters, and estimate
@@ -79,7 +79,7 @@ experience:
   - name: Applied Research Associates
     title: Engineering Intern
     date: May--Aug.~2015
-    location: Raleigh, NC
+    location: Raleigh,~NC
     description:
       - Designed and developed graphical, memory management, and simulation
         components of vulnerability assessment engineering software.
@@ -89,7 +89,7 @@ experience:
     name_short: N.C. State Univ., Dept. of Mechanical & Aerospace Engineering
     title: Undergraduate Researcher
     date: Sept.~2011~--~May~2015
-    location: Raleigh, NC
+    location: Raleigh,~NC
     description:
       - Developed automatically foldable structures out of prestrained polymer
         sheets using nanowire film to generate localized heating.
@@ -98,7 +98,7 @@ experience:
   - name: Deere & Company
     title: Product Research & Development Engineering Intern
     date: May--Aug.~2013
-    location: Waterloo, IA
+    location: Waterloo,~IA
     description:
       - Developed and tested the control software for the power takeoff (PTO) on
         5M/5R series tractors. Started with no functioning PTO; by the end of
@@ -107,7 +107,7 @@ experience:
   - name: Applied Research Associates
     title: Engineering Intern
     date: May--Aug.~2012
-    location: Raleigh, NC
+    location: Raleigh,~NC
     description:
       - Performed validation testing, analysis, and debugging for accreditation
         of state-of-the-art munitions effects simulation software.
@@ -116,8 +116,8 @@ experience:
       - Received the //Above and Beyond the Call of Duty Award.//
   - name: U.S.~Environmental Protection Agency
     title: Research Intern
-    date: Summer 2010 & Summer 2011
-    location: Durham, NC
+    date: Summer~2010 & Summer~2011
+    location: Durham,~NC
     description:
       - "Developed multiple custom computer programs and scripts to analyze
         experimental data; modified existing software to work with EPA's data."
@@ -137,7 +137,7 @@ extracurricular:
   - name: N.C. State Alternative Service Break
     title: Team Leader
     date: 2012--2013
-    location: Guyan Valley, West Virginia
+    location: Guyan~Valley, West~Virginia
     description:
       - Planned logistics and programming for weeklong service trip.  Led the
         team and solved unexpected problems.
