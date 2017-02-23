@@ -15,11 +15,11 @@
 
 .PHONY: default nonweb web
 
-default: resume.pdf resume-web.pdf resume-blog.html resume-sphinx.rst resume.txt resume-web.txt
+default: resume.pdf resume-web.pdf resume-blog.html resume-sphinx.rst resume.txt resume-web.txt resume-web.md
 
 nonweb: resume.pdf resume.txt
 
-web: resume-web.pdf resume-blog.html resume-web.txt
+web: resume-web.pdf resume-blog.html resume-web.txt resume-sphinx.rst resume-web.md
 
 resume.tex: resume.tex.j2 transform_resume.py config.yml resume.yml resume-nonweb.yml
 	python3 transform_resume.py latex $< $@ resume.yml resume-nonweb.yml
@@ -44,6 +44,9 @@ resume-web.txt: resume.txt.j2 transform_resume.py config.yml resume.yml
 
 resume-sphinx.rst: resume-sphinx.rst.j2 transform_resume.py config.yml resume.yml
 	python3 transform_resume.py sphinx $< $@ resume.yml
+
+resume-web.md: resume.md.j2 transform_resume.py config.yml resume.yml
+	python3 transform_resume.py markdown $< $@ resume.yml
 
 clean:
 	rm -f -- *.aux *.fls *.fdb_latexmk *.log *.out resume*.txt resume*.html resume*.pdf resume*.tex resume*.rst

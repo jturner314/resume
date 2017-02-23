@@ -196,7 +196,7 @@ if __name__ == '__main__':
         description="Render resume templates.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('type', type=str,
-                        choices=['latex', 'html', 'txt', 'sphinx'],
+                        choices=['latex', 'html', 'txt', 'sphinx', 'markdown'],
                         help="Output file type.")
     parser.add_argument('template', type=str,
                         help="Path to Jinja2 template file.")

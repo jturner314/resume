@@ -17,10 +17,10 @@
 Resume
 ######
 
-This a system to generate PDF (via LaTeX), HTML, TXT, and Sphinx resumes from a
-YAML file containing all of the resume content. It is partly inspired by
-`Ming-Ho Yee's resume project <https://github.com/mhyee/resume>`_. A single
-Python script performs the transformation using `PyYAML
+This a system to generate PDF (via LaTeX), HTML, TXT, Sphinx, and Markdown
+resumes from a YAML file containing all of the resume content. It is partly
+inspired by `Ming-Ho Yee's resume project <https://github.com/mhyee/resume>`_.
+A single Python script performs the transformation using `PyYAML
 <http://pyyaml.org/wiki/PyYAML>`_ to parse the data file(s) and `Jinja2
 <http://jinja.pocoo.org/>`_ to fill the data into templates.
 
@@ -43,7 +43,8 @@ the output. The LaTeX output is then compiled to a PDF.
 
 The HTML output is bare-bones, intended for inclusion into a HTML-based blog
 with custom CSS. The Sphinx output is a reStructuredText file intended for
-inclusion into a `Sphinx`_-based website with custom CSS.
+inclusion into a `Sphinx`_-based website with custom CSS. The Markdown output
+is intended for inclusion in a website with custom CSS.
 
 .. _Sphinx: http://sphinx-doc.org/
 
@@ -57,13 +58,13 @@ To build everything, simply type::
 The usage details for the script are::
 
    usage: transform_resume.py [-h] [--config CONFIG]
-                              {latex,html,txt,sphinx} template output data
+                              {latex,html,txt,sphinx,markdown} template output data
                               [data ...]
 
    Render resume templates.
 
    positional arguments:
-     {latex,html,txt,sphinx}
+     {latex,html,txt,sphinx,markdown}
                            Output file type.
      template              Path to Jinja2 template file.
      output                Desired output path.

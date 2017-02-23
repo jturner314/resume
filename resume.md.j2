@@ -1,0 +1,114 @@
+{#
+Copyright (C) 2014  Jim Turner
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#}
+
+{%- macro oneentry(entry) -%}
+{% if entry.name_short is defined %}
+  {% set name = entry.name_short %}
+{% elif entry.name is defined %}
+  {% set name = entry.name %}
+{% elif entry.degree is defined %}
+  {% set name = entry.degree %}
+{% endif %}
+{% if entry.title is defined %}
+  {% set title = entry.title %}
+{% elif entry.university is defined %}
+  {% set title = entry.university %}
+{% endif %}
+-   <span class="resume-entry-head">
+    <span class="resume-entry-left">
+    {% if name is defined %}
+    <span class="resume-entry-name">
+    {{ name }}
+    {% if entry.grade is defined %}
+    – {{ entry.grade }}
+    {% endif %}
+    </span>
+    {% endif %}
+    {% if title is defined %}
+    <span class="resume-entry-title">
+    {{ title }}
+    </span>
+    {% endif %}
+    </span>
+    <span class="resume-entry-right">
+    {% if entry.date is defined %}
+    <span class="resume-entry-date">
+    {{ entry.date }}
+    </span>
+    {% endif %}
+    {% if entry.location is defined %}
+    <span class="resume-entry-location">
+    {{ entry.location }}
+    </span>
+    {% endif %}
+    </span>
+    </span>
+
+    {% if entry.description is defined %}
+    {% if entry.description is string %}
+    {{ entry.description }}
+    {% else %}
+    {% for item in entry.description %}
+    - {{ item }}
+    {% endfor %}
+    {% endif %}
+    {% endif %}
+
+{% endmacro %}
+
+{%- macro entrylist(entries) -%}
+{% for entry in entries %}{{ oneentry(entry) }}{% endfor %}
+{%- endmacro -%}
+
+# Summary
+
+{{ summary }}
+
+# Education
+
+{{ entrylist(education) }}
+
+# Publications & Presentations
+
+{% for item in publications %}
+- <span class="resume-publication">
+  {{ item.text }}
+  {% if item.url is defined %}
+  ([Link]({{ item.url }}))
+  {% endif %}
+  </span>
+
+{% endfor %}
+
+# Work & Research Experience
+
+{{ entrylist(experience) }}
+
+{% if skills is defined %}
+
+# Skills
+
+{% for skill in skills %}
+- *{{ skill.name }}*{% if skill.description is defined %}: {{ skill.description }}{% endif %}
+
+{% endfor %}
+
+{% endif %}
+
+# Leadership, Involvement, & Service
+
+{{ entrylist(extracurricular) }}
