@@ -46,5 +46,5 @@ resume-sphinx.rst: resume-sphinx.rst.j2 transform_resume.py config.yml resume.ym
 	python3 transform_resume.py sphinx $< $@ resume.yml
 
 clean:
-	rm -f -- *.aux *.fls *.fdb_latexmk *.log *.out *.txt *.html *.pdf *.tex
+	rm -f -- *.aux *.fls *.fdb_latexmk *.log *.out resume*.txt resume*.html resume*.pdf resume*.tex resume*.rst
 	rm -rf -- auto/
