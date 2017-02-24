@@ -66,7 +66,7 @@ publications:
 experience:
   - name: Duke University
     title: Graduate Researcher
-    date: Aug.~2015~--~present
+    date: Aug.~2015 -- present
     location: Durham,~NC
     description:
       - Developed algorithms and software using a nonlinear model to optimize
@@ -78,7 +78,7 @@ experience:
         group; trained the group to use the cluster.
   - name: Applied Research Associates
     title: Engineering Intern
-    date: May--Aug.~2015
+    date: May--Aug.\ 2015
     location: Raleigh,~NC
     description:
       - Designed and developed graphical, memory management, and simulation
@@ -88,7 +88,7 @@ experience:
   - name: N.C. State University, Dept. of Mechanical & Aerospace Engineering
     name_short: N.C. State Univ., Dept. of Mechanical & Aerospace Engineering
     title: Undergraduate Researcher
-    date: Sept.~2011~--~May~2015
+    date: Sept.~2011 -- May~2015
     location: Raleigh,~NC
     description:
       - Developed automatically foldable structures out of prestrained polymer
@@ -97,7 +97,7 @@ experience:
         tested samples, analyzed results, devised improvements.
   - name: Deere & Company
     title: Product Research & Development Engineering Intern
-    date: May--Aug.~2013
+    date: May--Aug.\ 2013
     location: Waterloo,~IA
     description:
       - Developed and tested the control software for the power takeoff (PTO) on
@@ -106,7 +106,7 @@ experience:
         superior performance than previous model tractors.
   - name: Applied Research Associates
     title: Engineering Intern
-    date: May--Aug.~2012
+    date: May--Aug.\ 2012
     location: Raleigh,~NC
     description:
       - Performed validation testing, analysis, and debugging for accreditation
