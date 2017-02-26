@@ -107,8 +107,8 @@ Publications & Presentations
 .. rst-class:: resume-publication
 
   {{ item.text }}
-  {% if item.url is defined %}
-  (`Link <{{ item.url }}>`__)
+  {% if item.links is defined %}
+  ({% for link in item.links %}`{{ link.text }} <{{ link.href }}>`__{% if not loop.last %}, {% endif %}{% endfor %})
   {% endif %}
 
 {% endfor %}

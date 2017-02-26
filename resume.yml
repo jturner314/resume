@@ -34,15 +34,18 @@ education:
       - "//2011 NCSU Park Scholar:// Merit-based, full-ride scholarship"
 publications:
   - key: Turner2016
-    url: https://jim.turner.link/_downloads/IDETC2016-60235.pdf
     text:
       "Turner, J. D. and B. P. Mann. ``Sensitivity of Final Field Position to
       the Punt Initial Conditions in American Football''. //Proceedings of the
       ASME 2016 International Design Engineering Technical Conferences &
       Computers and Information in Engineering Conference.// Charlotte, NC,
       August 2016."
+    links:
+      - text: conference paper (PDF)
+        href: https://jim.turner.link/_downloads/IDETC2016-60235.pdf
+      - text: presentation (PDF)
+        href: https://jim.turner.link/_downloads/presentation.pdf
   - key: Mack2014
-    url: http://dx.doi.org/10.1016/j.neuro.2013.11.008
     text:
       "Mack, C. M., B. J. Lin, J. D. Turner, A. F. Johnstone, L. D. Burgoon,
       and T. J. Shafer. ``Burst and principal components analyses of MEA data
@@ -50,13 +53,20 @@ publications:
       //NeuroToxicology,// 40 (Jan. 2014), pp. 75--85."
     awards:
       - EPA Scientific and Technological Achievement Award (STAA)
+    links:
+      - text: ResearchGate
+        href: https://www.researchgate.net/publication/259270176_Burst_and_principal_components_analyses_of_MEA_data_for_16_chemicals_describe_at_least_three_effects_classes
+      - text: ScienceDirect
+        href: http://dx.doi.org/10.1016/j.neuro.2013.11.008
   - key: Turner2014
-    url: https://jim.turner.link/_downloads/NCSU_2014_Undegraduate_Research_Symposium_poster.pdf
     text:
       "Turner, J. D. and Y. Zhu. ``Three-dimensional structures from
       electrically-activated self-folding of polymer sheets''. //Summer
       Undergraduate Research Symposium.// North Carolina State University.
       Raleigh, NC, July 2014."
+    links:
+      - text: poster (PDF)
+        href: https://jim.turner.link/_downloads/NCSU_2014_Undegraduate_Research_Symposium_poster.pdf
   - key: Qin2013
     text:
       "Qin, Q., R. W. Mailen, J. D. Turner, Y. Liu, J. Genzer, M. D. Dickey,

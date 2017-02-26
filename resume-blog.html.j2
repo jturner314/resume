@@ -90,10 +90,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <h2 id="publications">Publications &amp; Presentations</h2>
       {% for item in publications %}
       <p class="resume-publication">
-        {% if item.url is defined %}
-        <a href="{{ item.url }}">{{ item.text }}</a>
-        {% else %}
         {{ item.text }}
+        {% if item.links is defined %}
+        {% for link in item.links %}
+        <a href="{{ link.href }}">{{ link.text }}</a>
+        {% endfor %}
         {% endif %}
       </p>
       {% endfor %}
