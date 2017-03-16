@@ -74,15 +74,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 {% for entry in entries %}{{ oneentry(entry) }}{% endfor %}
 {%- endmacro -%}
 
-# Summary
+## Summary
 
 {{ summary }}
 
-# Education
+## Education
 
 {{ entrylist(education) }}
 
-# Publications & Presentations
+## Publications & Presentations
 
 {% for item in publications %}
 - <span class="resume-publication">
@@ -94,13 +94,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 {% endfor %}
 
-# Work & Research Experience
+## Work & Research Experience
 
 {{ entrylist(experience) }}
 
 {% if skills is defined %}
 
-# Skills
+## Skills
 
 {% for skill in skills %}
 - *{{ skill.name }}*{% if skill.description is defined %}: {{ skill.description }}{% endif %}
@@ -109,6 +109,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 {% endif %}
 
-# Leadership, Involvement, & Service
+## Leadership, Involvement, & Service
 
 {{ entrylist(extracurricular) }}
