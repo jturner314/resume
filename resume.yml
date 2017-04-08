@@ -41,10 +41,8 @@ publications:
       Computers and Information in Engineering Conference.// Charlotte, NC,
       August 2016."
     links:
-      - text: conference paper (PDF)
-        href: https://jim.turner.link/_downloads/IDETC2016-60235.pdf
-      - text: presentation (PDF)
-        href: https://jim.turner.link/_downloads/presentation.pdf
+      - text: more~info
+        href: https://jim.turner.link/projects/football-punts/
   - key: Mack2014
     text:
       "Mack, C. M., B. J. Lin, J. D. Turner, A. F. Johnstone, L. D. Burgoon,
@@ -54,10 +52,8 @@ publications:
     awards:
       - EPA Scientific and Technological Achievement Award (STAA)
     links:
-      - text: ResearchGate
-        href: https://www.researchgate.net/publication/259270176_Burst_and_principal_components_analyses_of_MEA_data_for_16_chemicals_describe_at_least_three_effects_classes
-      - text: ScienceDirect
-        href: http://dx.doi.org/10.1016/j.neuro.2013.11.008
+      - text: more~info
+        href: https://jim.turner.link/projects/neuronal-networks/
   - key: Turner2014
     text:
       "Turner, J. D. and Y. Zhu. ``Three-dimensional structures from
@@ -65,14 +61,17 @@ publications:
       Undergraduate Research Symposium.// North Carolina State University.
       Raleigh, NC, July 2014."
     links:
-      - text: poster (PDF)
-        href: https://jim.turner.link/_downloads/NCSU_2014_Undegraduate_Research_Symposium_poster.pdf
+      - text: more~info
+        href: https://jim.turner.link/projects/self-folding/
   - key: Qin2013
     text:
       "Qin, Q., R. W. Mailen, J. D. Turner, Y. Liu, J. Genzer, M. D. Dickey,
       and Y. Zhu. ``Self-Folding of Polymer Sheets into Origami: Modeling and
       Experiments''. //SEM Annual Conference and Exposition on Experimental and
       Applied Mechanics.// Lombard, IL, June 2013."
+    links:
+      - text: more~info
+        href: https://jim.turner.link/projects/self-folding/
 experience:
   - name: Duke University
     title: Graduate Researcher
