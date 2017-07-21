@@ -244,7 +244,7 @@
   \par}% to avoid weird spacing bug at the first section if no blank line is left after \makecvtitle
 
 \RenewDocumentCommand{\section}{sm}{%
-  \par\addvspace{1.22ex}%
+  \par\addvspace{1\entrysep}%
   \phantomsection{}% reset the anchor for hyperrefs
   \addcontentsline{toc}{section}{#2}%
   \strut\sectionstyle{#2}%

@@ -18,8 +18,10 @@ education:
     location: Durham,~NC
     grade: 4.00~GPA
     date: 2015--present
+    multicols: 2
     description:
-      - "//2015 James~B.~Duke Fellowship:// Merit-based, four-year supplemental fellowship"
+      - "//2017 National Defense Science and Engineering Graduate (NDSEG) Fellowship:// Merit-based, national, full-ride fellowship"
+      - "//2015 James~B.~Duke Fellowship:// Merit-based, four-year fellowship"
       - "//2015 Pratt/Gardner Fellowship:// Merit-based fellowship"
   - degree: B.S.~Mechanical Engineering
     university: North Carolina State University
