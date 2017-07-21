@@ -37,8 +37,8 @@ education:
 publications:
   - key: Turner2016
     text:
-      "Turner, J. D. and B. P. Mann. ``Sensitivity of Final Field Position to
-      the Punt Initial Conditions in American Football''. //Proceedings of the
+      "Turner, J. D. and B. P. Mann. ``Sensitivity of final field position to
+      the punt initial conditions in American football''. //Proceedings of the
       ASME 2016 International Design Engineering Technical Conferences &
       Computers and Information in Engineering Conference.// Charlotte, NC,
       August 2016."
@@ -68,8 +68,8 @@ publications:
   - key: Qin2013
     text:
       "Qin, Q., R. W. Mailen, J. D. Turner, Y. Liu, J. Genzer, M. D. Dickey,
-      and Y. Zhu. ``Self-Folding of Polymer Sheets into Origami: Modeling and
-      Experiments''. //SEM Annual Conference and Exposition on Experimental and
+      and Y. Zhu. ``Self-folding of polymer sheets into origami: modeling and
+      experiments''. //SEM Annual Conference and Exposition on Experimental and
       Applied Mechanics.// Lombard, IL, June 2013."
     links:
       - text: more~info
