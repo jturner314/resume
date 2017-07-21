@@ -35,6 +35,15 @@ education:
       - "//2014 Goldwater Scholar:// Merit-based, national scholarship"
       - "//2011 NCSU Park Scholar:// Merit-based, full-ride scholarship"
 publications:
+  - key: Turner2017
+    text:
+      "Turner, J. D., M. J. Mazzoleni, J. A. Little, D. Sequeira, and B. P.
+      Mann. ``A nonlinear model for the characterization and optimization of
+      athletic training and performance''. //Biomedical Human Kinetics,// 9.1
+      (Feb. 2017), pp. 82--93."
+    links:
+      - text: DOI
+        href: http://dx.doi.org/10.1515/bhk-2017-0013
   - key: Turner2016
     text:
       "Turner, J. D. and B. P. Mann. ``Sensitivity of final field position to
