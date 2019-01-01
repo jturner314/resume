@@ -35,6 +35,12 @@ education:
       - "//2014 Goldwater Scholar:// Merit-based, national scholarship"
       - "//2011 NCSU Park Scholar:// Merit-based, full-ride scholarship"
 publications:
+  - key: Turner2019
+    text:
+      "(Accepted) Turner, J. D., L. H. Manring, and B. P. Mann. ``Reinforcement
+      learning for active damping of harmonically excited pendulum with highly
+      nonlinear actuator''. //Proceedings of SEM International Modal Analysis
+      Conference (IMAC).// Orlando, FL, January 28--31, 2019."
   - key: Turner2017
     text:
       "Turner, J. D., M. J. Mazzoleni, J. A. Little, D. Sequeira, and B. P.
