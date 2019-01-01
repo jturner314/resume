@@ -90,7 +90,7 @@ publications:
       - text: more~info
         href: https://jim.turner.link/pages/self-folding/
 experience:
-  - name: Duke University
+  - name: Duke University, Dept.~of Mechanical Engineering & Materials Science
     title: Graduate Researcher
     date: Aug.~2015 -- present
     location: Durham,~NC
@@ -111,8 +111,8 @@ experience:
         components of vulnerability assessment engineering software.
       - Developed custom Python scripts for version control, data visualization
         and analysis, and systems integration route visualization.
-  - name: N.C. State University, Dept. of Mechanical & Aerospace Engineering
-    name_short: N.C. State Univ., Dept. of Mechanical & Aerospace Engineering
+  - name: N.C. State University, Dept.~of Mechanical & Aerospace Engineering
+    name_short: N.C. State Univ., Dept.~of Mechanical & Aerospace Engineering
     title: Undergraduate Researcher
     date: Sept.~2011 -- May~2015
     location: Raleigh,~NC
