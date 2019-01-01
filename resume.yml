@@ -95,11 +95,9 @@ experience:
     date: Aug.~2015 -- present
     location: Durham,~NC
     description:
-      - Developed algorithms and software using a nonlinear model to optimize
-        athletic training routines, fit model parameters, and estimate
-        uncertainty.
-      - Developed a mathematical model, computer simulation, and analysis of
-        flight and bouncing of an American football.
+      - Conducted independent research involving reinforcement learning,
+        embedded controls, nonlinear dynamics, optimization, and data
+        analysis.
       - Designed, built, configured, and documented a computer cluster for the lab
         group; trained the group to use the cluster.
   - name: Applied Research Associates
@@ -135,10 +133,9 @@ experience:
     date: May--Aug.\ 2012
     location: Raleigh,~NC
     description:
-      - Performed validation testing, analysis, and debugging for accreditation
-        of state-of-the-art munitions effects simulation software.
-      - Developed custom computer programs in Python for file manipulation,
-        statistics, and analysis of engineering data.
+      - Performed and improved validation testing, analysis, and debugging for
+        accreditation of state-of-the-art munitions effects simulation
+        software.
       - Received the //Above and Beyond the Call of Duty Award.//
   - name: U.S.~Environmental Protection Agency
     title: Research Intern
