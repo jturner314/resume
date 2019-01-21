@@ -60,6 +60,15 @@ publications:
     links:
       - text: more~info
         href: https://jim.turner.link/pages/football-punts/
+  - key: Turner2014
+    text:
+      "Turner, J. D. and Y. Zhu. ``Three-dimensional structures from
+      electrically-activated self-folding of polymer sheets''. //Summer
+      Undergraduate Research Symposium.// North Carolina State University.
+      Raleigh, NC, July 2014."
+    links:
+      - text: more~info
+        href: https://jim.turner.link/pages/self-folding/
   - key: Mack2014
     text:
       "Mack, C. M., B. J. Lin, J. D. Turner, A. F. Johnstone, L. D. Burgoon,
@@ -71,15 +80,6 @@ publications:
     links:
       - text: more~info
         href: https://jim.turner.link/pages/neuronal-networks/
-  - key: Turner2014
-    text:
-      "Turner, J. D. and Y. Zhu. ``Three-dimensional structures from
-      electrically-activated self-folding of polymer sheets''. //Summer
-      Undergraduate Research Symposium.// North Carolina State University.
-      Raleigh, NC, July 2014."
-    links:
-      - text: more~info
-        href: https://jim.turner.link/pages/self-folding/
   - key: Qin2013
     text:
       "Qin, Q., R. W. Mailen, J. D. Turner, Y. Liu, J. Genzer, M. D. Dickey,
