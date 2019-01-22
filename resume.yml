@@ -145,6 +145,9 @@ experience:
       - "Developed multiple custom computer programs and scripts to analyze
         experimental data; modified existing software to work with EPA's data."
 extracurricular:
+  - name: Open Source Software Project Manager
+    date: 2018--present
+    description: ndarray, ndarray-npy, ndarray-rand, ndarray-stats, ndarray-parallel, py_literal
   - name: National Honor/Professional Societies
     date: 2011--present
     description: Tau Beta Pi, Phi Beta Kappa, Phi Kappa Phi, ASME, SIAM
