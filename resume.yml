@@ -42,8 +42,8 @@ publications:
       actuator''. //Nonlinear Structures and Systems, Volume 1: Proceedings of
       the 37th IMAC, Jan.~2019,// (2020), pp.~119--123."
     links:
-      - text: publisher
-        href: https://doi.org/10.1007/978-3-030-12391-8_15
+      - text: more~info
+        href: https://jim.turner.link/pages/reinforcement-learning-for-nonlinear-active-damping/
   - key: Turner2017
     text:
       "Turner, J. D., M. J. Mazzoleni, J. A. Little, D. Sequeira, and B. P.
