@@ -150,7 +150,7 @@ experience:
 extracurricular:
   - name: Open Source Software Project Manager
     date: 2018--present
-    description: ndarray, ndarray-npy, ndarray-rand, ndarray-stats, ndarray-parallel, py_literal
+    description: ndarray, ndarray-npy, ndarray-rand, ndarray-stats, ndarray-linalg, py_literal
   - name: National Honor/Professional Societies
     date: 2011--present
     description: Tau Beta Pi, Phi Beta Kappa, Phi Kappa Phi, ASME, SIAM
