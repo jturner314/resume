@@ -35,6 +35,19 @@ education:
       - "//2014 Goldwater Scholar:// Merit-based, national scholarship"
       - "//2011 NCSU Park Scholar:// Merit-based, full-ride scholarship"
 publications:
+  - key: Little2020
+    text:
+      "(Accepted) Little, J. A., J. D. Turner, and B. P. Mann, ``Improving
+      empirical characteristic multiplier estimation through a change of
+      basis'', //Journal of Sound and Vibration// (July 2020)."
+  - key: Wang2020
+    text:
+      "Wang, X.-S., J. D. Turner, and B. P. Mann. ``Constrained attractor
+      selection using deep reinforcement learning''. //Journal of Vibration and
+      Control// (May 2020)."
+    links:
+      - text: publisher
+        href: https://doi.org/10.1177/1077546320930144
   - key: Turner2020
     text:
       "Turner, J. D., L. H. Manring, and B. P. Mann. ``Reinforcement learning
