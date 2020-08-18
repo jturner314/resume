@@ -10,8 +10,9 @@ contact:
 summary:
   Mechanical engineering Ph.D.~candidate with research and industry experience
   in reinforcement learning, nonlinear dynamical systems, mechanical
-  simulation, electromechanical controls, numerical optimization, testing and
-  verification, data analysis, and software development.
+  simulation, electromechanical controls, numerical optimization, state
+  estimation, testing and verification, data analysis, and software
+  development.
 education:
   - degree: Ph.D.~Mechanical Engineering
     university: Duke University
@@ -106,6 +107,13 @@ publications:
       - text: more~info
         href: https://jim.turner.link/pages/self-folding/
 experience:
+  - name: U.S. Naval Research Laboratory
+    title: NREIP Research Intern
+    date: June~2020 -- present
+    location: Washington, D.C., (remote)
+    description:
+      - Conducted independent research involving reinforcement learning for
+        control of an AUV and particle filtering for state estimation.
   - name: Duke University, Dept.~of Mechanical Engineering & Materials Science
     title: Graduate Researcher
     date: Aug.~2015 -- present
