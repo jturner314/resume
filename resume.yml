@@ -38,9 +38,12 @@ education:
 publications:
   - key: Little2020
     text:
-      "(Accepted) Little, J. A., J. D. Turner, and B. P. Mann. ``Improving
-      empirical characteristic multiplier estimation through a change of
-      basis''. //Journal of Sound and Vibration// (July 2020)."
+      "Little, J. A., J. D. Turner, and B. P. Mann. ``Improving empirical
+      characteristic multiplier estimation through a change of basis''.
+      //Journal of Sound and Vibration,// 488 (Dec.~2020)."
+    links:
+      - text: publisher
+        href: https://doi.org/10.1016/j.jsv.2020.115613
   - key: Wang2020
     text:
       "Wang, X.-S., J. D. Turner, and B. P. Mann. ``Constrained attractor
