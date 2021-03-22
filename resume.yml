@@ -129,6 +129,14 @@ experience:
       - Designed, built, configured, and documented a computer cluster for the lab
         group; trained the group to use the cluster.
   - name: U.S. Naval Research Laboratory
+    title: NRL SSEP Researcher
+    date: Feb.~2021 -- present
+    location: Washington, D.C., (remote)
+    description:
+      - Conducted independent research involving reinforcement learning and
+        planning for control of an AUV and particle filtering for state
+        estimation.
+  - name: U.S. Naval Research Laboratory
     title: NREIP Research Intern
     date: June--Sep.\ 2020
     location: Washington, D.C., (remote)
