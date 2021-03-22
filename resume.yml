@@ -36,6 +36,14 @@ education:
       - "//2014 Goldwater Scholar:// Merit-based, national scholarship"
       - "//2011 NCSU Park Scholar:// Merit-based, full-ride scholarship"
 publications:
+  - key: Turner2021
+    text:
+      "(Accepted) Turner, J. D., and B. P. Mann. ``Empirical characteristic
+      multiplier estimation: a comparison of methods and improvements''.
+      //Journal of Sound and Vibration,// (2021)."
+    links:
+      - text: publisher
+        href: https://doi.org/10.1016/j.jsv.2021.116053
   - key: Little2020
     text:
       "Little, J. A., J. D. Turner, and B. P. Mann. ``Improving empirical
