@@ -158,7 +158,7 @@
 
 % commands
 \renewcommand*{\recomputecvlengths}{%
-  \setlength{\entrysep}{1.3\itemsep}
+  \setlength{\entrysep}{1.65\itemsep}
   \setlength{\quotewidth}{0.65\textwidth}%
   % main lenghts
   \setlength{\maincolumnwidth}{\textwidth}%
@@ -247,7 +247,7 @@
   \par}% to avoid weird spacing bug at the first section if no blank line is left after \makecvtitle
 
 \RenewDocumentCommand{\section}{sm}{%
-  \par\addvspace{1.3\entrysep}%
+  \par\addvspace{1.7\entrysep}%
   \phantomsection{}% reset the anchor for hyperrefs
   \addcontentsline{toc}{section}{#2}%
   \strut\sectionstyle{#2}%
