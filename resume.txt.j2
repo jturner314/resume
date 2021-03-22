@@ -112,14 +112,6 @@ Education
 
 {{ entrylist(education) }}
 
-Publications & Presentations
-============================
-
-{% for item in publications %}
-{{ item.text|hard_wrap(WIDTH,0,"",2) }}
-
-{% endfor %}
-
 Work & Research Experience
 ==========================
 
@@ -139,6 +131,14 @@ Skills
 
 
 {% endif %}
+Publications & Presentations
+============================
+
+{% for item in publications %}
+{{ item.text|hard_wrap(WIDTH,0,"",2) }}
+
+{% endfor %}
+
 Leadership, Involvement, & Service
 ==================================
 

@@ -132,13 +132,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 << entrylist(education) >>
 
-% Bibliography
-\begin{thebibliography}{99}
-%< for item in publications >%
-\bibitem{<< item.key >>} << item.text >>
-%< endfor >%
-\end{thebibliography}
-
 \section{Work \& Research Experience}
 
 << entrylist(experience) >>
@@ -158,6 +151,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 %< endfor >%
 
 %< endif >%
+
+% Bibliography
+\begin{thebibliography}{99}
+%< for item in publications >%
+\bibitem{<< item.key >>} << item.text >>
+%< endfor >%
+\end{thebibliography}
 
 \section{Leadership, Involvement, \& Service}
 

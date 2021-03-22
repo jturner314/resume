@@ -82,18 +82,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 {{ entrylist(education) }}
 
-## Publications & Presentations
-
-{% for item in publications %}
-- <span class="resume-publication">
-  {{ item.text }}
-  {% if item.links is defined %}
-  ({% for link in item.links %}[{{ link.text }}]({{ link.href }}){% if not loop.last %}, {% endif %}{% endfor %})
-  {% endif %}
-  </span>
-
-{% endfor %}
-
 ## Work & Research Experience
 
 {{ entrylist(experience) }}
@@ -108,6 +96,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 {% endfor %}
 
 {% endif %}
+
+## Publications & Presentations
+
+{% for item in publications %}
+- <span class="resume-publication">
+  {{ item.text }}
+  {% if item.links is defined %}
+  ({% for link in item.links %}[{{ link.text }}]({{ link.href }}){% if not loop.last %}, {% endif %}{% endfor %})
+  {% endif %}
+  </span>
+
+{% endfor %}
 
 ## Leadership, Involvement, & Service
 

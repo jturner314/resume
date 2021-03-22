@@ -87,18 +87,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <h2 id="education">Education</h2>
       {{ entrylist(education)|indent(6) }}
 
-      <h2 id="publications">Publications &amp; Presentations</h2>
-      {% for item in publications %}
-      <p class="resume-publication">
-        {{ item.text }}
-        {% if item.links is defined %}
-        {% for link in item.links %}
-        <a href="{{ link.href }}">{{ link.text }}</a>
-        {% endfor %}
-        {% endif %}
-      </p>
-      {% endfor %}
-
       <h2 id="experience">Work &amp; Research Experience</h2>
       {{ entrylist(experience)|indent(6) }}
 
@@ -122,6 +110,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       {% endfor %}
       </ul>
       {% endif %}
+
+      <h2 id="publications">Publications &amp; Presentations</h2>
+      {% for item in publications %}
+      <p class="resume-publication">
+        {{ item.text }}
+        {% if item.links is defined %}
+        {% for link in item.links %}
+        <a href="{{ link.href }}">{{ link.text }}</a>
+        {% endfor %}
+        {% endif %}
+      </p>
+      {% endfor %}
 
       <h2 id="extracurricular">Leadership, Involvement, &amp; Service</h2>
       {{ entrylist(extracurricular)|indent(6) }}

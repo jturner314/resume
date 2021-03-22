@@ -98,21 +98,6 @@ Education
 
 {{ entrylist(education) }}
 
-.. _resume-publications:
-
-Publications & Presentations
-============================
-
-{% for item in publications %}
-.. rst-class:: resume-publication
-
-  {{ item.text }}
-  {% if item.links is defined %}
-  ({% for link in item.links %}`{{ link.text }} <{{ link.href }}>`__{% if not loop.last %}, {% endif %}{% endfor %})
-  {% endif %}
-
-{% endfor %}
-
 .. _resume-experience:
 
 Work & Research Experience
@@ -132,6 +117,21 @@ Skills
 {% endfor %}
 
 {% endif %}
+.. _resume-publications:
+
+Publications & Presentations
+============================
+
+{% for item in publications %}
+.. rst-class:: resume-publication
+
+  {{ item.text }}
+  {% if item.links is defined %}
+  ({% for link in item.links %}`{{ link.text }} <{{ link.href }}>`__{% if not loop.last %}, {% endif %}{% endfor %})
+  {% endif %}
+
+{% endfor %}
+
 .. _resume-extracurricular:
 
 Leadership, Involvement, & Service
