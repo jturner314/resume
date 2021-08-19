@@ -9,10 +9,9 @@ contact:
   web: https://james.turner.link
 summary:
   Mechanical engineering Ph.D.~candidate with research and industry experience
-  in reinforcement learning, nonlinear dynamical systems, mechanical
-  simulation, electromechanical controls, numerical optimization, state
-  estimation, testing and verification, data analysis, and software
-  development.
+  in nonlinear dynamical systems, planning and control, state estimation,
+  reinforcement learning, mechanical simulation, numerical optimization,
+  testing and verification, data analysis, and software development.
 education:
   - degree: Ph.D.~Mechanical Engineering
     university: Duke University
@@ -123,8 +122,8 @@ experience:
     date: Aug.~2015 -- present
     location: Durham,~NC
     description:
-      - Conducted independent research involving reinforcement learning,
-        embedded controls, nonlinear dynamics, optimization, and data
+      - Conducted independent research involving nonlinear dynamics,
+        optimization, reinforcement learning, embedded controls, and data
         analysis.
       - Designed, built, configured, and documented a computer cluster for the lab
         group; trained the group to use the cluster.
