@@ -24,7 +24,7 @@ import re
 import yaml
 
 
-@jinja2.environmentfilter
+@jinja2.pass_environment
 def hard_wrap(env, raw, width, indent=0, bullet="", hanging=0):
     """Hard wrap text with optionally an indent, hanging indent, and/or bullet.
 
