@@ -132,8 +132,8 @@ experience:
     date: Feb.~2021 -- present
     location: Washington, D.C., (remote)
     description:
-      - Conducted independent research involving reinforcement learning and
-        planning for control of an AUV and particle filtering for state
+      - Conducted independent research involving planning and reinforcement
+        learning for control of an AUV and particle filtering for state
         estimation.
   - name: U.S. Naval Research Laboratory
     title: NREIP Research Intern
