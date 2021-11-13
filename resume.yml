@@ -37,9 +37,9 @@ education:
 publications:
   - key: Turner2021
     text:
-      "(Accepted) Turner, J. D., and B. P. Mann. ``Empirical characteristic
-      multiplier estimation: a comparison of methods and improvements''.
-      //Journal of Sound and Vibration,// (2021)."
+      "Turner, J. D., and B. P. Mann. ``Empirical characteristic multiplier
+      estimation: A comparison of methods and improvements''. //Journal of
+      Sound and Vibration,// 511 (2021)."
     links:
       - text: publisher
         href: https://doi.org/10.1016/j.jsv.2021.116053
