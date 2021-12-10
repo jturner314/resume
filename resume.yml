@@ -35,6 +35,12 @@ education:
       - "//2014 Goldwater Scholar:// Merit-based, national scholarship"
       - "//2011 NCSU Park Scholar:// Merit-based, full-ride scholarship"
 publications:
+  - key: Turner2021a
+    text:
+      "Turner, J. D. ``Data-driven parameter estimation of time delay dynamical
+      systems for stability prediction.'' Ph.D.~Dissertation. Duke University,
+      Department of Mechanical Engineering & Materials Science. Durham, NC,
+      2021."
   - key: Turner2021
     text:
       "Turner, J. D., and B. P. Mann. ``Empirical characteristic multiplier
