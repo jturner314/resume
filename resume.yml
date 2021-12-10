@@ -117,16 +117,6 @@ publications:
       - text: more~info
         href: https://jim.turner.link/pages/self-folding/
 experience:
-  - name: Duke University, Dept.~of Mechanical Engineering & Materials Science
-    title: Graduate Researcher
-    date: Aug.~2015 -- present
-    location: Durham,~NC
-    description:
-      - Conducted independent research involving nonlinear dynamics,
-        optimization, reinforcement learning, embedded controls, and data
-        analysis.
-      - Designed, built, configured, and documented a computer cluster for the lab
-        group; trained the group to use the cluster.
   - name: U.S. Naval Research Laboratory
     title: NRL SSEP Researcher
     date: Feb.~2021 -- present
@@ -135,6 +125,16 @@ experience:
       - Conducted independent research involving planning and reinforcement
         learning for control of an AUV and particle filtering for state
         estimation.
+  - name: Duke University, Dept.~of Mechanical Engineering & Materials Science
+    title: Graduate Researcher
+    date: Aug.~2015 -- Dec.~2021
+    location: Durham,~NC
+    description:
+      - Conducted independent research involving nonlinear dynamics,
+        optimization, reinforcement learning, embedded controls, and data
+        analysis.
+      - Designed, built, configured, and documented a computer cluster for the lab
+        group; trained the group to use the cluster.
   - name: U.S. Naval Research Laboratory
     title: NREIP Research Intern
     date: June--Sep.\ 2020
@@ -194,7 +194,7 @@ extracurricular:
     date: 2011--present
     description: Tau Beta Pi, Phi Beta Kappa, Phi Kappa Phi, ASME, SIAM
   - name: University Honor Societies
-    date: 2011--present
+    date: 2011--2021
     description: Society of Duke Fellows, NCSU Golden Chain, NCSU University Honors Program
   - name: "N.C. State Engineers' Council"
     title: Department Representative, Secretary, Committee Chair
