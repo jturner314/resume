@@ -35,6 +35,11 @@ education:
       - "//2014 Goldwater Scholar:// Merit-based, national scholarship"
       - "//2011 NCSU Park Scholar:// Merit-based, full-ride scholarship"
 publications:
+  - key: Turner2022
+    text:
+      "Turner, J. D., J. McMahon, and M. M. Zavlanos. ``Receding horizon
+      tracking of an unknown number of mobile targets using a bearings-only
+      sensor.'' (Submitted.)"
   - key: Turner2021a
     text:
       "Turner, J. D. ``Data-driven parameter estimation of time delay dynamical
