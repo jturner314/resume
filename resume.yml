@@ -39,7 +39,11 @@ publications:
     text:
       "Turner, J. D., J. McMahon, and M. M. Zavlanos. ``Receding horizon
       tracking of an unknown number of mobile targets using a bearings-only
-      sensor.'' (Submitted.)"
+      sensor.'' //2022 International Conference on Robotics and
+      Automation~(ICRA).// Philadelphia, PA, May 2022."
+    links:
+      - text: publisher
+        href: https://doi.org/10.1109/ICRA46639.2022.9811882
   - key: Turner2021a
     text:
       "Turner, J. D. ``Data-driven parameter estimation of time delay dynamical
