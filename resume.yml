@@ -142,8 +142,14 @@ publications:
         href: https://jim.turner.link/pages/self-folding/
 experience:
   - name: U.S. Naval Research Laboratory
+    title: Researcher
+    date: Jan.~2022 -- present
+    location: Washington, D.C., (remote)
+    description:
+      - Received the //Karles Fellowship//.
+  - name: U.S. Naval Research Laboratory
     title: NRL SSEP Researcher
-    date: Feb.~2021 -- present
+    date: Feb.~2021 -- Jan.~2022
     location: Washington, D.C., (remote)
     description:
       - Conducted independent research involving planning and reinforcement
