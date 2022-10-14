@@ -35,6 +35,15 @@ education:
       - "//2014 Goldwater Scholar:// Merit-based, national scholarship"
       - "//2011 NCSU Park Scholar:// Merit-based, full-ride scholarship"
 publications:
+  - key: Wang2022
+    text:
+      "Wang, X.-S., S. A. Moore, J. D. Turner, and B. P. Mann. ``A model-free
+      sampling method for basins of attraction using hybrid active
+      learning~(HAL)''. //Communications in Nonlinear Science and Numerical
+      Simulation,// 112 (2022)."
+    links:
+      - text: publisher
+        href: https://doi.org/10.1016/j.cnsns.2022.106551
   - key: Turner2022
     text:
       "Turner, J. D., J. McMahon, and M. M. Zavlanos. ``Receding horizon
